@@ -11,6 +11,8 @@ public class SQLHelperDemo {
     public static void showDemo() {
         try {
             SQLHelperDemo sqlHelperDemo = new SQLHelperDemo();
+
+            System.out.println("Select All Query : " + sqlHelperDemo.getSelectAllQueryUtilResult());
             System.out.println("Select Query : " + sqlHelperDemo.getSelectQueryUtilResult());
         } catch (Exception e) {
             System.out.println(e.getMessage());
@@ -24,6 +26,15 @@ public class SQLHelperDemo {
                         .table(TableExample.class)
                         .columns(TargetedTableExample.getColumns())
                         .targetClass(TargetedTableExample.class)
+                        .build();
+    }
+
+    public String getSelectAllQueryUtilResult() throws Exception {
+        return new QueryUtil
+                        .Builder
+                        .Select()
+                        .all()
+                        .table(TableExample.class)
                         .build();
     }
 }
