@@ -1,4 +1,4 @@
-rootProject.name = 'SQLHelper'
-include 'utils'
+rootProject.name = 'perdiatmaja'
+include 'sqlhelper'
 include 'demo'
 
