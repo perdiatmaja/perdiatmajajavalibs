@@ -22,7 +22,7 @@ public class SQLHelperDemo {
                         .Builder
                         .Select()
                         .table(TableExample.class)
-                        .columns("*")
+                        .columns(TargetedTableExample.getColumns())
                         .targetClass(TargetedTableExample.class)
                         .build();
     }

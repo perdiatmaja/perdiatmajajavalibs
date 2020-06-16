@@ -7,4 +7,8 @@ public class TargetedTableExample {
         private int column2;
 
         private boolean column3;
+
+        public static String getColumns() {
+                return "column1, column2, column3";
+        }
 }
