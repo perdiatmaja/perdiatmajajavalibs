@@ -1,4 +1,4 @@
-package id.atmaja.sqlhelper.constants;
+package constants;
 
 public class SQLError {
 

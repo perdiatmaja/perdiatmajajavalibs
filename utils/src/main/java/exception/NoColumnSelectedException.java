@@ -1,6 +1,6 @@
-package id.atmaja.sqlhelper.exception;
+package exception;
 
-import id.atmaja.sqlhelper.constants.SQLError.*;
+import constants.SQLError.*;
 
 public class NoColumnSelectedException extends Exception {
 

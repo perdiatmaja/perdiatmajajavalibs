@@ -1,4 +1,4 @@
-package id.atmaja.sqlhelper.utils;
+package utils;
 
 public class TextUtil {
 

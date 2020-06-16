@@ -1,6 +1,6 @@
-package id.atmaja.sqlhelper.utils;
+package utils;
 
-import id.atmaja.sqlhelper.exception.NoColumnSelectedException;
+import exception.NoColumnSelectedException;
 
 public class QueryUtil {
 
