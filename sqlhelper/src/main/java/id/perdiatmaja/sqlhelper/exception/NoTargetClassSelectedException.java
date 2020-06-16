@@ -1,6 +1,6 @@
-package exception;
+package id.perdiatmaja.sqlhelper.exception;
 
-import constants.SQLError.*;
+import id.perdiatmaja.sqlhelper.constants.SQLError.*;
 
 public class NoTargetClassSelectedException extends SQLHelperException {
 

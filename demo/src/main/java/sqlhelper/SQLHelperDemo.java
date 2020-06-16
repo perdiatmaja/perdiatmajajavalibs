@@ -1,6 +1,6 @@
 package sqlhelper;
 
-import utils.QueryUtil;
+import id.perdiatmaja.sqlhelper.utils.QueryUtil;
 
 public class SQLHelperDemo {
 

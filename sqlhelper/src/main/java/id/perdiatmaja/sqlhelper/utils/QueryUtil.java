@@ -1,7 +1,7 @@
-package utils;
+package id.perdiatmaja.sqlhelper.utils;
 
-import exception.NoColumnSelectedException;
-import exception.NoTargetClassSelectedException;
+import id.perdiatmaja.sqlhelper.exception.NoColumnSelectedException;
+import id.perdiatmaja.sqlhelper.exception.NoTargetClassSelectedException;
 
 public class QueryUtil {
 

@@ -1,4 +1,4 @@
-package constants;
+package id.perdiatmaja.sqlhelper.constants;
 
 public class SQLError {
 

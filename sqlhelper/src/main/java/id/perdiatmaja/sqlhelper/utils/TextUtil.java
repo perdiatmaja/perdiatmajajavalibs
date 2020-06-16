@@ -1,4 +1,4 @@
-package utils;
+package id.perdiatmaja.sqlhelper.utils;
 
 public class TextUtil {
 
