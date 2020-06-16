@@ -1,6 +1,7 @@
 package utils;
 
 import exception.NoColumnSelectedException;
+import exception.NoTargetClassSelectedException;
 
 public class QueryUtil {
 
@@ -164,9 +165,13 @@ public class QueryUtil {
                     throw new NoColumnSelectedException();
                 }
 
+                if (TextUtil.isEmpty(targetClass)) {
+                    throw new NoTargetClassSelectedException();
+                }
+
                 String targetedClass = "new " + targetClass + "(";
                 targetedClass += column.substring(0, column.length()-2);
-                return targetedClass + ")";
+                return targetedClass.replaceAll("\\s+\\$\\$","$$") + ")";
             }
 
             private Select setJoin(String joinQuery) {

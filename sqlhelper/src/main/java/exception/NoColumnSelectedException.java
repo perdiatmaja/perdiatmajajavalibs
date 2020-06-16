@@ -2,12 +2,9 @@ package exception;
 
 import constants.SQLError.*;
 
-public class NoColumnSelectedException extends Exception {
-
-    private final String errorCode;
+public class NoColumnSelectedException extends SQLHelperException {
 
     public NoColumnSelectedException() {
-        super(Message.NO_COLUMN_SELECTED);
-        errorCode = Code.NO_COLUMN_SELECTED;
+        super(Code.NO_COLUMN_SELECTED, Message.NO_COLUMN_SELECTED);
     }
 }
