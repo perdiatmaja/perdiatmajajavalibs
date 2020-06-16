@@ -1,7 +1,8 @@
-package id.perdiatmaja.sqlhelper.utils;
+package id.perdiatmaja.sqlhelper;
 
 import id.perdiatmaja.sqlhelper.exception.NoColumnSelectedException;
 import id.perdiatmaja.sqlhelper.exception.NoTargetClassSelectedException;
+import id.perdiatmaja.sqlhelper.utils.SQLHelperTextUtil;
 
 public class QueryUtil {
 
@@ -161,11 +162,11 @@ public class QueryUtil {
             }
 
             private String createSelectedColumn() throws Exception {
-                if (TextUtil.isEmpty(column)) {
+                if (SQLHelperTextUtil.isEmpty(column)) {
                     throw new NoColumnSelectedException();
                 }
 
-                if (TextUtil.isEmpty(targetClass)) {
+                if (SQLHelperTextUtil.isEmpty(targetClass)) {
                     throw new NoTargetClassSelectedException();
                 }
 

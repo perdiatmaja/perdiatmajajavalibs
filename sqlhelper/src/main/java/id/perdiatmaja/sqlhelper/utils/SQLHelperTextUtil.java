@@ -1,6 +1,6 @@
 package id.perdiatmaja.sqlhelper.utils;
 
-public class TextUtil {
+public class SQLHelperTextUtil {
 
     private static final String EMPTY_STRING = "";
 
